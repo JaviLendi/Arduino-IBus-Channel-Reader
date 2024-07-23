@@ -11,7 +11,7 @@ The code provided in this repository demonstrates how to set up an Arduino to re
 - **Data Transmission**: Sends the read pulse widths over the IBUS protocol at regular intervals.
 - **Integration**: Used with [vJoySerialFeeder](https://github.com/Cleric-K/vJoySerialFeeder) for feeding data from the serial port of the Arduino to a virtual joystick.
 
-## Key Components:
+## Key Components
 
 - **Arduino Board**: Hardware platform for running the code.
 - **IBUS Library**: A library to facilitate communication using the IBUS protocol.
@@ -19,15 +19,15 @@ The code provided in this repository demonstrates how to set up an Arduino to re
 - **PulseIn Function**: Reads the duration of high pulses on the input pins.
 - **Serial Monitor**: Can be used to monitor the setup process and debug if needed.
 
-## Usage:
+## Usage
 
-1. **Connect the Channels**: Attach the signal wires for each of the six channels (from the receiver) to the corresponding pins (2-7) on the Arduino.
-3. **Upload the Code**: Load the provided sketch onto the Arduino using the Arduino IDE.
-4. **Monitor Output**: Use the Serial Monitor to observe the setup process and ensure the IBUS communication is working correctly.
-5. **Adjust Delay**: Modify the delay in the `loop` function as necessary to control the frequency of IBUS updates.
-6. **Virtual Joystick Mapping**: Refer to [vJoySerialFeeder](https://github.com/Cleric-K/vJoySerialFeeder) for using the data from the serial port of the Arduino and mapping the channels to a virtual joystick.
-
-![image](https://github.com/user-attachments/assets/d511f729-9d1e-4217-939f-40a8f93245b2)
-![image](https://github.com/user-attachments/assets/f2a3fd58-9196-4957-949d-29e9b755729c)
+1. **Connect the Channels**: Attach the signal wires for each of the six channels (from the receiver) to the corresponding pins (2-7) on the Arduino. Don't forget to connect the ground pin and power the receiver from the 5V pin of the Arduino or with an external battery.  
+   ![image](https://github.com/user-attachments/assets/d511f729-9d1e-4217-939f-40a8f93245b2)
+2. **Upload the Code**: Load the provided sketch onto the Arduino using the Arduino IDE.
+3. **Monitor Output**: Use the Serial Monitor to observe the setup process and ensure the IBUS communication is working correctly (Using **Check**).
+   ![image](https://github.com/user-attachments/assets/6866de3d-ff70-4595-909b-5a5792cc564e)
+4. **Adjust Delay**: Modify the delay in the `loop` function as necessary to control the frequency of IBUS updates.
+5. **Virtual Joystick Mapping**: Refer to [vJoySerialFeeder](https://github.com/Cleric-K/vJoySerialFeeder) for using the data from the serial port of the Arduino and mapping the channels to a virtual joystick.  
+   ![image](https://github.com/user-attachments/assets/f2a3fd58-9196-4957-949d-29e9b755729c)
 
 This code is useful for projects involving remote control systems, robotics, or any other application where reading multiple input channels and transmitting their values over IBUS is required.
